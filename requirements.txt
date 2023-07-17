@@ -1,6 +1,11 @@
+# available python version: 3.7, 3.9 (3.11 only support torch v2.x)
 # install from https://pytorch.org/get-started/locally/
-# torch>=1.12.0
-# torchvision>=0.6.1
+# for mac m1 without nvidia gpu, pip install with following torch versions:
+# torch==1.13.1
+# torchvision==0.14.1
+# for source code compatiblility,fixed following versions:
+numpy==1.21.6
+numba==0.56.4
+librosa==0.8.1
 tqdm>=4.30
-librosa>=0.9
 opencv_python>=4.2.0
