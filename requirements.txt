@@ -1,6 +1,8 @@
 # available python version: 3.7, 3.9 (3.11 only support torch v2.x)
 # install from https://pytorch.org/get-started/locally/
-# for mac m1 without nvidia gpu, pip install with following torch versions:
+# for win/linux pip wheel install cuda gpu version,
+# > pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
+# for mac m1/raspberry without nvidia gpu, pip install with following torch versions:
 # torch==1.13.1
 # torchvision==0.14.1
 # for source code compatiblility,fixed following versions:
