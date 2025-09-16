@@ -1,3 +1,4 @@
+# available python version: 3.7, 3.9 (3.11 only support torch v2.x)
 # install from https://pytorch.org/get-started/locally/
 # torch~=2.1.0
 # torchvision~=0.16.0
@@ -7,3 +8,8 @@ opencv_python~=4.8.0
 resampy~=0.4.0
 tqdm~=4.66.0
 numpy~=1.26.4
+# for mac m1 without nvidia gpu, pip install with following torch versions for v5.0.3:
+# torch==1.13.1
+# torchvision==0.14.1
+# for win nv gpu pc, install locally with 1.13.1+cu116...
+#   uses python v3.7
