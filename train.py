@@ -203,6 +203,7 @@ def main():
         np.linspace(1, 0, stable_bins - unstable_bins, dtype=np.float32)[:, None],
         np.zeros((bins - stable_bins, 1), dtype=np.float32),
     ], axis=0) * args.reduction_level
+    print('torch cuda', torch.cuda.is_available())
 
     device = torch.device('cpu')
     model = nets.CascadedNet(args.n_fft, args.hop_length, 32, 128)

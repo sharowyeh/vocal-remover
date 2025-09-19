@@ -122,6 +122,7 @@ def main():
 
     print('loading model...', end=' ')
     device = torch.device('cpu')
+    print('torch cuda', torch.cuda.is_available())
     if args.gpu >= 0:
         if torch.cuda.is_available():
             device = torch.device('cuda:{}'.format(args.gpu))
