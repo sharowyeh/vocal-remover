@@ -125,6 +125,7 @@ def main():
     device = torch.device('cpu')
     model = nets.CascadedNet(args.n_fft, 32, 128)
     model.load_state_dict(torch.load(args.pretrained_model, map_location=device))
+    print('torch cuda', torch.cuda.is_available())
     if args.gpu >= 0:
         if torch.cuda.is_available():
             device = torch.device('cuda:{}'.format(args.gpu))

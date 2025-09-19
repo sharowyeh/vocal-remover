@@ -147,6 +147,8 @@ def main():
     for i, (X_fname, y_fname) in enumerate(val_filelist):
         logger.info('{} {} {}'.format(i + 1, os.path.basename(X_fname), os.path.basename(y_fname)))
 
+    print('torch cuda', torch.cuda.is_available())
+
     device = torch.device('cpu')
     model = nets.CascadedNet(args.n_fft, 32, 128)
     if args.pretrained_model is not None:
